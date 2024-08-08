@@ -1,20 +1,32 @@
-import SearchInput from "../SearchInput"
-import Converstion from "../Converstion" 
-import LogoutButton from "../LogoutButton"
+import Conversations from "./Conversations";
+import LogoutButton from "./LogoutButton";
+import SearchInput from "./SearchInput";
 
-const SideBar =  ()=>{
-  return (
-    <div className="border-r font-bold border-slate-500 flex flex-col">
-       <SearchInput/>
-       <Converstion/>
-       <Converstion/>
-       <Converstion/>
-       <Converstion/>
-       <Converstion/>
-       <Converstion/>
-       <LogoutButton/> 
-    </div>
-  )
-}
+const Sidebar = () => {
+	return (
+		<div className='border-r border-slate-500 p-4 flex flex-col'>
+			<SearchInput />
+			<div className='divider px-3'></div>
+			<Conversations />
+			<LogoutButton />
+		</div>
+	);
+};
+export default Sidebar;
 
-export default SideBar
+// STARTER CODE FOR THIS FILE
+// import Conversations from "./Conversations";
+// import LogoutButton from "./LogoutButton";
+// import SearchInput from "./SearchInput";
+
+// const Sidebar = () => {
+// 	return (
+// 		<div className='border-r border-slate-500 p-4 flex flex-col'>
+// 			<SearchInput />
+// 			<div className='divider px-3'></div>
+// 			<Conversations />
+// 			<LogoutButton />
+// 		</div>
+// 	);
+// };
+// export default Sidebar;
